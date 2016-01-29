@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 				//		GameObject clone = 
 			Instantiate (shot, transform.position, transform.rotation);
 				//as GameObject;
+			audio.Play();
 				}
 		}
 
