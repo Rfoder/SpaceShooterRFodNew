@@ -27,6 +27,7 @@ public class DestroyByContaxt : MonoBehaviour {
 				}
 				//	Debug.Log (other.name);
 				Instantiate(explosion, transform.position, transform.rotation);
+		gameController.GameOver ();
 		if (other.tag == "Player") {
 				Instantiate (playerExplosion, other.transform.position, other.transform.rotation);
 		}
